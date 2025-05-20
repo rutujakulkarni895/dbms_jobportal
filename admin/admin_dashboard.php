@@ -32,7 +32,7 @@ $admin = $adminQuery->fetch_assoc();
 
 // Metrics Queries
 $totalStudents = $conn->query("SELECT COUNT(*) as count FROM students")->fetch_assoc()['count'];
-$totalCompanies = $conn->query("SELECT COUNT(*) as count FROM applications")->fetch_assoc()['count'];
+$totalCompanies = $conn->query("SELECT COUNT(*) as count FROM companies")->fetch_assoc()['count'];
 $totalJobs = $conn->query("SELECT COUNT(*) as count FROM jobs")->fetch_assoc()['count'];
 $placedStudents = $conn->query("SELECT COUNT(DISTINCT student_id) as count FROM offers")->fetch_assoc()['count'];
 
@@ -60,7 +60,7 @@ $recentLogs = $conn->query("SELECT * FROM admin_logs ORDER BY performed_at DESC 
         <a class="navbar-brand" href="#">Admin Panel</a>
         <div class="d-flex">
             <span class="navbar-text text-white me-3">Logged in as: <strong><?= $admin['name'] ?></strong></span>
-            <a href="admin_logout.php" class="btn btn-outline-light">Logout</a>
+            <a href="logout.php" class="btn btn-outline-light">Logout</a>
         </div>
     </div>
 </nav>

@@ -66,9 +66,7 @@ if ($result->num_rows == 1) {
             <a href="applied_jobs.php">Applied Jobs</a>
             <a href="application_status.php">Check Application Status</a> 
             <a href="approved.php">Approved Applications</a>
-            <a href="#resume">Resume & Documents</a>
             <a href="student_interview_schedules.php">Interview Schedules</a>
-            <a href="#messages">Company Messages</a>
             <a href="logout.php" class="logout-btn">Logout</a>
         </div>
         
